@@ -27,6 +27,7 @@ public class StudentGroup {
     @SneakyThrows
     public StudentGroup() {
         this.groupId = UUID.randomUUID().toString();
+        this.groupName="ZERO";
     }
 
 }

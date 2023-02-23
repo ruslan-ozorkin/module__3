@@ -1,4 +1,3 @@
-
 DROP TABLE IF EXISTS student,marks,studentgroup,subject,teacher;
 
 CREATE TABLE IF NOT EXISTS studentgroup
@@ -147,3 +146,4 @@ values
 ('MARK_24', floor(random()*100), 'STUDENT_5','SUBJECT_24'),
 ('MARK_25', floor(random()*100), 'STUDENT_5','SUBJECT_25')
 ;
+commit ;
