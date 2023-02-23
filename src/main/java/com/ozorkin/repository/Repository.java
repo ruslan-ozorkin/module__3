@@ -1,6 +1,8 @@
 package com.ozorkin.repository;
 
+import com.ozorkin.model.Student;
 import com.ozorkin.model.StudentGroup;
+import com.ozorkin.model.Teacher;
 
 import java.util.List;
 import java.util.Map;
@@ -17,6 +19,10 @@ public interface Repository<T> {
 
     Optional<List<StudentGroup>> getGroupByName(String name);
 
-     Map<String, Object> countStudentsByGroup();
+    void countStudentsByGroup();
+    void avgMarksByGroup ();
+    List<Teacher> findTeacherByName(String name);
+    List<Object[]>  subjectsStatistic();
+    List<Student>  studentsWithHigherAvgMarks(double mark);
 
 }

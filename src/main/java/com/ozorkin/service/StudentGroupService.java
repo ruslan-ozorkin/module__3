@@ -68,8 +68,25 @@ public class StudentGroupService {
     public Optional<List<StudentGroup>> getGroupByName(String name) {
         return studentGroupRepository.getGroupByName(name);
     }
-    public Map<String, Object> countStudentsByGroup () {
-        return studentGroupRepository.countStudentsByGroup();
+    public void countStudentsByGroup () {
+        studentGroupRepository.countStudentsByGroup();
+    }
+    public void avgMarksByGroup () {
+        studentGroupRepository.avgMarksByGroup();
+    }
+
+    public List<Teacher> findTeacherByName(String name) {
+
+        return studentGroupRepository.findTeacherByName(name);
+
+    }
+    public List<Object[]> subjectsStatistic() {
+
+        return studentGroupRepository.subjectsStatistic();
+
+    }
+    public List<Student>  studentsWithHigherAvgMarks(double mark) {
+        return studentGroupRepository.studentsWithHigherAvgMarks(mark);
     }
 
 
